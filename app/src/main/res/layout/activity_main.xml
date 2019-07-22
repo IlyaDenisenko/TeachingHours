@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/ImageView"
+        android:layout_width="271dp"
+        android:layout_height="313dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="0dp"
+        android:src="@drawable/hours" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginRight="105dp"
+        android:src="@drawable/arrow"
+
+        android:transformPivotX="0dp"
+        android:transformPivotY="5dp" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignBottom="@+id/imageView2"
+
+        android:rotation="90"
+        android:src="@drawable/arrow"
+        android:transformPivotX="0dp"
+        android:transformPivotY="5dp"/>
+
+
+    <TextView
+        android:id="@+id/task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/task"
+        android:textSize="22sp"
+        android:layout_gravity="center"
+
+        android:layout_below="@+id/ImageView"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+
+        android:layout_below="@+id/task"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/but"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/galochka"
+        android:layout_gravity="center"
+
+        android:layout_below="@+id/number"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
